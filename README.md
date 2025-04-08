@@ -1,49 +1,62 @@
-# Week1
-Forest Fire Detection uses CNN to identify fire in forest images. Trained on labeled data, the model detects smoke or flames from satellite/drone images in real time. It helps in quick alerts, reducing damage and improving response speed.
-# 🌲🔥 Forest Fire Detection using Deep Learning
+# 🌲 Week 1: Forest Fire Detection using Deep Learning
 
-## 📌 Project Overview
-This project aims to detect forest fires in real-time using deep learning techniques. By analyzing satellite or drone images, the model identifies early signs of forest fires such as smoke or flames, enabling quick action and minimizing environmental damage.
+## 📅 Timeline: Week 1 – Planning, Data Collection & Preprocessing
 
-## 🧠 Technology Used
+### ✅ Objectives
+- Define project goals and setup
+- Collect and explore dataset
+- Preprocess image data for deep learning model
+
+---
+
+## 🧠 Tasks Completed
+
+### 1. 🔧 Project Setup
+- Initialized Git repository
+- Installed required libraries:
+  - Python 3.x
+  - TensorFlow / Keras
+  - OpenCV
+  - NumPy
+  - Matplotlib
+- Created project structure:
+
+### 2. 📚 Research & Planning
+- Reviewed existing approaches in forest fire detection
+- Decided to use a CNN-based model for image classification
+- Identified potential datasets on Kaggle and open repositories
+
+### 3. 🗃️ Dataset Collection
+- Collected labeled forest fire images (Fire / No Fire)
+- Sources: Kaggle, custom image scraping
+- Organized dataset into directories:
+
+### 4. 🧼 Data Preprocessing
+- Resized images to a standard size (e.g., 128x128)
+- Normalized pixel values between 0 and 1
+- Applied data augmentation (rotation, flipping, zoom)
+- Saved preprocessed images for model training
+
+---
+
+## 🧰 Tools Used
 - Python
 - TensorFlow / Keras
 - OpenCV
-- NumPy
-- Matplotlib
+- Jupyter Notebook
 
-## 🗃️ Dataset
-We used a labeled image dataset consisting of forest areas with and without fires. The dataset was split into training and testing sets for model evaluation.
+---
 
-- Fire Images:  Images with visible fire/smoke  
-- Non-Fire Images:  Regular forest scenes  
-(Source: [Kaggle / Custom collected images])
+## 🧩 Deliverables
+- Initial dataset (organized & cleaned)
+- Preprocessing pipeline (`src/preprocessing.py`)
+- Jupyter notebook for EDA and data visualization
+- Updated project README and requirements.txt
 
-## 🏗️ Model Architecture
-We used a **Convolutional Neural Network (CNN)** with the following layers:
-- Convolutional + MaxPooling layers
-- Flattening layer
-- Dense layers with ReLU and softmax activation
-- Optimized with Adam and cross-entropy loss
+---
 
-## 🔍 Features
-- Real-time fire detection from camera feeds or image files
-- Accuracy and loss tracking using training logs
-- Visualization of predictions and feature maps
-
-## ✅ Results
-- **Accuracy:** ~92% on test data
-- **Precision/Recall:** High performance in fire detection scenarios
-- Able to detect even subtle signs of smoke in daylight conditions
-
-## 🚀 How to Run
-1. Clone the repository  
-2. Install dependencies  
-3. Run the model  
-
-## 📦 Future Improvements
-- Integrate with drone or satellite live feeds
-- Add night-time infrared detection
-- Deploy as a web or mobile app
-
+## 📌 Next Week
+- Build CNN model architecture
+- Begin training on preprocessed dataset
+- Tune hyperparameters for better performance
 
